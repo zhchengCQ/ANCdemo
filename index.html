@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ANC Audio Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f5;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .group {
+      margin-bottom: 60px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .audio-label {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    audio {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Active Noise Control Audio Demo</h1>
+
+  <div class="group">
+    <h2>Traffic Noise</h2>
+
+    <div class="card">
+      <div class="audio-label">ANC Off</div>
+      <audio controls src="TrafficNoise_woANC.wav"></audio>
+      <img src="TrafficNoise_woANC.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">Fixed-filter Method</div>
+      <audio controls src="fixfilterOnTraffic.wav"></audio>
+      <img src="fixfilterOnTraffic.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">FRM-BT Method</div>
+      <audio controls src="FRM-BTonTraffic.wav"></audio>
+      <img src="FRM-BTonTraffic.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">PBFAG Method</div>
+      <audio controls src="PBFAGonTraffic.wav"></audio>
+      <img src="PBFAGonTraffic.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">PNFAG Method</div>
+      <audio controls src="PNFAGonTraffic.wav"></audio>
+      <img src="PNFAGonTraffic.png" alt="Spectrum">
+    </div>
+  </div>
+
+  <div class="group">
+    <h2>Pink Noise</h2>
+
+    <div class="card">
+      <div class="audio-label">ANC Off</div>
+      <audio controls src="PinkNoise_woANC.wav"></audio>
+      <img src="PinkNoise_woANC.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">Fixed-filter Method</div>
+      <audio controls src="fixfilterOnPink.wav"></audio>
+      <img src="fixfilterOnPink.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">FRM-BT Method</div>
+      <audio controls src="FRM-BTonPink.wav"></audio>
+      <img src="FRM-BTonPink.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">PBFAG Method</div>
+      <audio controls src="PBFAGonPink.wav"></audio>
+      <img src="PBFAGonPink.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">PNFAG Method</div>
+      <audio controls src="PNFAGonPink.wav"></audio>
+      <img src="PNFAGonPink.png" alt="Spectrum">
+    </div>
+  </div>
+
+
+  <div class="group">
+    <h2>Aircraft Noise</h2>
+
+    <div class="card">
+      <div class="audio-label">ANC Off</div>
+      <audio controls src="AirNoise_woANC.wav"></audio>
+      <img src="AirNoise_woANC.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">Fixed-filter Method</div>
+      <audio controls src="fixfilterOnAir.wav"></audio>
+      <img src="fixfilterOnAir.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">FRM-BT Method</div>
+      <audio controls src="FRM-BTonAir.wav"></audio>
+      <img src="FRM-BTonAir.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">PBFAG Method</div>
+      <audio controls src="PBFAGonAir.wav"></audio>
+      <img src="PBFAGonAir.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">PNFAG Method</div>
+      <audio controls src="PNFAGonAir.wav"></audio>
+      <img src="PNFAGonAir.png" alt="Spectrum">
+    </div>
+  </div>
+
+    <div class="group">
+    <h2>Tank Noise</h2>
+
+    <div class="card">
+      <div class="audio-label">ANC Off</div>
+      <audio controls src="TankNoise_woANC.wav"></audio>
+      <img src="TankNoise_woANC.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">Fixed-filter Method</div>
+      <audio controls src="fixfilterOnTank.wav"></audio>
+      <img src="fixfilterOnTank.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">FRM-BT Method</div>
+      <audio controls src="FRM-BTonTank.wav"></audio>
+      <img src="FRM-BTonAir.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">PBFAG Method</div>
+      <audio controls src="PBFAGonTank.wav"></audio>
+      <img src="PBFAGonTank.png" alt="Spectrum">
+    </div>
+
+    <div class="card">
+      <div class="audio-label">PNFAG Method</div>
+      <audio controls src="PNFAGonTank.wav"></audio>
+      <img src="PNFAGonTank.png" alt="Spectrum">
+    </div>
+  </div>
+
+
+</body>
+</html>
